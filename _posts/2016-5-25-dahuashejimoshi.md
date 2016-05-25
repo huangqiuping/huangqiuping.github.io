@@ -13,7 +13,7 @@ grammar_codeLinenums: true
 # 六大原则
 
 ## 一、单一职责原则
-### 1、定义
+###1、定义
 单一职责原则
 : (SRP)，就一个类而言，应用仅有一个引起它变化的原因。
 ### 2、使用
@@ -137,6 +137,7 @@ grammar_codeLinenums: true
 
 ### 5、示例
 - Strategy.java
+
 ```
 public interface Strategy {
     public void doSomething();
@@ -144,6 +145,7 @@ public interface Strategy {
 ```
 
 - Context.java
+
 ```
 public class Context {
     private Strategy mStrategy = null;
@@ -159,6 +161,7 @@ public class Context {
 ```
 
 - ConcreteStrategy1.java
+
 ```
 public class ConcreteStrategy1 implements Strategy {
     @Override
